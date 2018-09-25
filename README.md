@@ -7,7 +7,7 @@
 # Contatos
 - Email: clsinfsolution@gmail.com
 - Fone: (86)98869-8580
-# habilidades
+# Habilidades
 - Java
 
 Meu primeiro contato com java foi no curso técnico à distância da Universidade estadual do Maranhão, onde pude desenvolver uma aplicação 
