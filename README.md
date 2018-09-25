@@ -60,6 +60,6 @@ Atualmente sou funcionário público concursado no Estado do Piaui, contudo busc
 
 - Projeto Android apresentado na disciplina de Programação Orientada a Obejtos com o Prof. Rogério Silva: https://github.com/infsolution/Infbullet.git
 # Expectativas
-Aprender os principios e vantagens de desenvolver um webserver em Python com Django e poder comparar com um webserver construido em PHP, onde poderei tirar conclusões sobre qual tecnologia poderia ter melhor desempenho diante das necessidadades em se atender a milhares ou milhões de requisições de usuários, medindo estabilidade, performance e segurança e facilidade de manutenção.
+Aprender os principios e vantagens de desenvolver um webserver em Python com Django e podendo criar aplicações estaveis e seguras.
 
 
