@@ -21,6 +21,12 @@ Conheci Python no curso de ADS na disciplina de algoritmos com o Prof. Rogério 
 
 Considero PHP uma linguagem fácil por ter uma documentação muito extensa e uma comunidade muito grande de colaborades o que faz com esteja sempre em evloçao, é robusta e pode-se desenvolver aplicações para todos os fins.
 
+- Laravel 
+O Laravel é um framework para desenvolvimento web criado em PHP que fornece todas as funcionalidades necessárias para criação de sites e APIS.
+
+- Bootstrap
+Framework para desenvolvimento front-end muito utilizado atualmente.
+
 # Interesses
 
 - Acadêmico
@@ -48,10 +54,5 @@ Atualmente sou funcionário público concursado no Estado do Piaui, contudo busc
 - Projeto Android apresentado na disciplina de Programação Orientada a Obejtos com o Prof. Rogério Silva: https://github.com/infsolution/Infbullet.git
 # Expectativas
 Aprender os principios e vantagens de desenvolver um webserver em Python com Django e poder comparar com um webserver construido em PHP, onde poderei tirar conclusões sobre qual tecnologia poderia ter melhor desempenho diante das necessidadades em se atender a milhares ou milhões de requisições de usuários, medindo estabilidade, performance e segurança e facilidade de manutenção.
- 
-# Conteúdo não abordado
 
-- PHP
-
-Seria interessante a abordagem de informações sobre a perfomance, desempenho e segurança fazendo um comparativo no uso de Python e PHP em aplicações iguais e em mesmas condições de uso.
 
