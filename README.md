@@ -22,9 +22,12 @@ Conheci Python no curso de ADS na disciplina de algoritmos com o Prof. Rogério 
 Considero PHP uma linguagem fácil por ter uma documentação muito extensa e uma comunidade muito grande de colaborades o que faz com esteja sempre em evloçao, é robusta e pode-se desenvolver aplicações para todos os fins.
 
 - Laravel 
+
 O Laravel é um framework para desenvolvimento web criado em PHP que fornece todas as funcionalidades necessárias para criação de sites e APIS.
 
-- Bootstrap
+- BootstrapProjeto profissional
+FindFer é um projeto para o desenvolvimeto de uma plataforma de anúncios e vendas online voltada para feiras, está em fase inicial de desenvolvimento, com lancamento para teste com os primeiros usuários previsto para o fim de outubro de 2017
+
 Framework para desenvolvimento front-end muito utilizado atualmente.
 
 # Interesses
