@@ -36,6 +36,13 @@ FindFer é um projeto para o desenvolvimeto de uma plataforma de anúncios e ven
 
 # Interesses
 
+- Machine Learne
+
+- PLN
+
+ 
+# Portifólio
+
 - Acadêmico
 
 Tenho uma formação em Administraçãoa de Empresas e busco consiliar as habilidades da administração com as desenvolvidas em ADS pensando desenvolver soluções financeiramente viaveis que possam contribuir pra o desenvolvivento pessoal e se possivel de todo o estado.
@@ -47,8 +54,6 @@ Atualmente sou funcionário público concursado no Estado do Piaui, contudo busc
 - Projeto profissional
 
 <a href="http://www.findfer.com.br/">FindFer</a> é um projeto para o desenvolvimeto de uma plataforma de anúncios e vendas online voltada para feiras, está em fase inicial de desenvolvimento, com lancamento para teste com os primeiros usuários previsto para o fim de outubro de 2017.
- 
-# Portifólio
 
 - Lattes: http://lattes.cnpq.br/4123535550257706
 
