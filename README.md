@@ -63,9 +63,9 @@ Atualmente sou funcionário público concursado no Estado do Piaui, contudo busc
 
 - Projeto em Python apresentado na disciplina de Redes de Computadores com o Prof. Adalton Sena: https://github.com/infsolution/DeteccaoDeErro.git
 
-- Projeto Android apresentado na disciplina de Programação Orientada a Obejtos com o Prof. Rogério Silva: https://github.com/infsolution/Infbullet.git
+- Projeto Android apresentado na disciplina de Programação Orientada a Objetos com o Prof. Rogério Silva: https://github.com/infsolution/Infbullet.git
 # Expectativas
-Aprender os principios e vantagens de desenvolver um webserver em Python com Django e podendo criar aplicações estaveis e seguras.
+Aprender os principios e vantagens de desenvolver um webservice em Python com Django e podendo criar aplicações estáveis e seguras.
 
 # Conteúdo não abordado
 
