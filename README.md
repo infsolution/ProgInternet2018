@@ -29,11 +29,6 @@ O Laravel é um framework para desenvolvimento web criado em PHP que fornece tod
 
 Framework para desenvolvimento front-end muito utilizado atualmente.
 
-Projeto profissional
-FindFer é um projeto para o desenvolvimeto de uma plataforma de anúncios e vendas online voltada para feiras, está em fase inicial de desenvolvimento, com lancamento para teste com os primeiros usuários previsto para o fim de outubro de 2017
-
-
-
 # Interesses
 
 - Machine Learne
