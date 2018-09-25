@@ -67,4 +67,6 @@ Atualmente sou funcionário público concursado no Estado do Piaui, contudo busc
 # Expectativas
 Aprender os principios e vantagens de desenvolver um webserver em Python com Django e podendo criar aplicações estaveis e seguras.
 
+# Conteúdo não abordado
 
+- PLN
