@@ -51,6 +51,8 @@ class Engine:
 
 
 
-
-engine = Engine( "Notícia")
-engine.engineSearch(["https://www.globo.com"],2)
+word = input("Digite o que você procura!\n")
+link = input("Informe um link\n")
+depth = int(input("Qual a profundidade?\n"))
+engine = Engine( word)
+engine.engineSearch([link],depth)
