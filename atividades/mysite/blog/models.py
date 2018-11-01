@@ -2,6 +2,9 @@ from django.db import models
 
 class Blog(models.Model):
     name = models.CharField(max_length=255)
+    def __str__(self):
+        return self.name
+    
 
 class Entry(models.Model):
     headline = models.CharField(max_length=50)
@@ -32,6 +35,9 @@ class Comentario(models.Model):
     pub_date = models.DateField(auto_now_add=True)
     perfil = models.ForeignKey(Perfil, on_delete=models.CASCADE)
     postagem = models.ForeignKey(Postagem, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.texto
+    
 
 class Reacao(models.Model):
     TIPO=(

@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from blog.models import *
 
 def index(request):
-    return render(request, 'blog/index.html')
+    blog = Blog.objects.get(id=1)
+    return render(request, 'blog/index.html',{'blog':blog})
