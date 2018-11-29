@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Blog(models.Model):
     name = models.CharField(max_length=255)
     def __str__(self):
@@ -55,3 +56,11 @@ class Reacao(models.Model):
     postagem = models.ForeignKey(Postagem, on_delete=models.CASCADE)
     perfil = models.ForeignKey(Perfil,on_delete=models.CASCADE)
     peso = models.IntegerField(default=0)
+
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    text = models.CharField(max_length=255)
+    data_published = models.DateField(auto_now_add=True)
+    def __str__(self):
+        return self.title
