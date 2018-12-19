@@ -5,17 +5,20 @@
 <p>O ReceitaWS provê uma API para recuperação de dados de empresas brasileiras através de seu CNPJ.</p>
 
 <h3>Paramentro necessário</h3> 
+
 # cnpj: 
 - obrigatório, numérico, o CNPJ a ser pesquisado
 
 # Uso:
-'''
+
+```
 url = 'https://www.receitaws.com.br/v1/cnpj/27865757000102'
 response = requests.get(url).json()
-'''
+```
 
 # Retorno:
-'''
+
+```
 {
   "atividade_principal": [
     {
@@ -68,4 +71,4 @@ response = requests.get(url).json()
     "database": true
   }
 }
-'''
+```
