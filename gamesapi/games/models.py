@@ -1,30 +1,50 @@
 from django.db import models
 
-# Create your models here.
+class GameCategory(models.Model):
+    name = models.CharField(max_length=200)
+
+    class Meta:
+        ordering = ('name',)
+
+    def __str__(self):
+        return self.name
+
+
 class Game(models.Model):
-	created = models.DateTimeField(auto_now_add=True)
-	name = models.CharField(max_length=200, blank=True, default='')
-	release_date = models.DateTimeField()
-	game_category = models.CharField(max_length=200, blank=True, default='')
-	played = models.BooleanField(default=False)
+    created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    name = models.CharField(max_length=200)
+    release_date = models.DateTimeField()
+    played = models.BooleanField(default=False)
+    game_category=models.ForeignKey(GameCategory,related_name='games',on_delete=models.CASCADE)
+    class Meta:
+        ordering = ('name',)
 
-	def __str__(self):
-		return self.name
+    def __str__(self):
+        return self.name
 
-	class Meta:
-		ordering = ('name',)
 
 class Player(models.Model):
-	nome = models.CharField(max_length=200,blank=True, default='')
-	genero = models.CharField(max_length=2)
-	cadastro = models.DateTimeField(auto_now_add=True)
-	def __str__(self):
-		return self.name
+    MALE = 'M'
+    FEMALE = 'F'
+    GENDER_CHOICES = ((MALE, 'Male'),(FEMALE, 'Female'),)
+    created = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=50, blank=False)
+    gender = models.CharField(max_length=2,
+                              choices=GENDER_CHOICES,
+                              default=MALE,)
+
+    class Meta:
+        ordering = ('name',)
+
+    def __str__(self):
+        return self.name
+
 
 class Score(models.Model):
-	player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='scores')
-	game = models.ForeignKey(Game, on_delete=models.CASCADE, related_name='games')
-	value = models.IntegerField(default=0)
-	date_value = models.DateTimeField(auto_now_add=True)
-	def __str__(self):
-		return self.value
+    score = models.IntegerField()
+    score_date = models.DateTimeField()
+    player=models.ForeignKey(Player,related_name='scores', on_delete=models.CASCADE)
+    game=models.ForeignKey(Game, on_delete=models.CASCADE)
+
+    class Meta:        
+        ordering = ('-score',)

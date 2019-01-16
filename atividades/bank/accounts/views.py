@@ -39,7 +39,6 @@ def account_detail(request, account_id):
 		return Response(status=status.HTTP_202_ACCEPTED)#status.HTTP_204_NO_CONTENT
 		#return Response(status=status.HTTP_412_PRECONDITION_FAILED)
 	elif request.method == 'PATCH':
-
 		if request.data['balance']>0:
 			account.balance = account.balance + request.data['balance']
 			account.save()
@@ -53,3 +52,11 @@ def account_detail(request, account_id):
 				return Response(status=status.HTTP_412_PRECONDITION_FAILED)
 		elif request.data['balance'] == 0:
 			return Response(status=status.HTTP_412_PRECONDITION_FAILED)
+
+
+'''elif request.method == 'PATCH':
+		accounts_serializer=AccountUpdate(account,data=request.data,partial=True)
+		if accounts_serializer.is_valid():
+			accounts_serializer.save()
+			return Response(accounts_serializer.data)
+		return Response(accounts_serializer.errors,status=status.HTTP_400_BAD_REQUEST)'''
