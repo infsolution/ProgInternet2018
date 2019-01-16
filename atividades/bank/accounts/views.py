@@ -29,7 +29,6 @@ def account_detail(request, account_id):
 		accounts_serializer = AccountSerializer(account)
 		return Response(accounts_serializer.data)
 	elif request.method == 'PUT':
-		print(request.data)
 		accounts_serializer = AccountSerializer(account, data=request.data)
 		if accounts_serializer.is_valid():
 			accounts_serializer.save()
@@ -40,8 +39,17 @@ def account_detail(request, account_id):
 		return Response(status=status.HTTP_202_ACCEPTED)#status.HTTP_204_NO_CONTENT
 		#return Response(status=status.HTTP_412_PRECONDITION_FAILED)
 	elif request.method == 'PATCH':
-		if request.data['balance']:
-			account.balance = request.data['balance']
+
+		if request.data['balance']>0:
+			account.balance = account.balance + request.data['balance']
 			account.save()
 			return Response(status=status.HTTP_202_ACCEPTED)
-		return Response(accounts_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+		elif request.data['balance'] < 0:
+			if request.data['balance'] <= account.balance:
+				account.balance = (account.balance + request.data['balance'])
+				account.save()
+				return Response(status=status.HTTP_202_ACCEPTED)
+			else:
+				return Response(status=status.HTTP_412_PRECONDITION_FAILED)
+		elif request.data['balance'] == 0:
+			return Response(status=status.HTTP_412_PRECONDITION_FAILED)
