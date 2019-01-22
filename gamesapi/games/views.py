@@ -8,6 +8,7 @@ from rest_framework.parsers import JSONParser
 from rest_framework import status, generics
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from rest_framework.reverse import reverse
 from games.models import *
 from games.serializers import *
 from datetime import datetime
